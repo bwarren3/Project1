@@ -15,4 +15,7 @@ function LegoPile() {
     "black": new BST(),
     "white": new BST(),
   }
+  this.insert = function (Brick) {
+    dictionary[Brick.color] = BST.insert(Brick);
+  }
 }
